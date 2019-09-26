@@ -1,6 +1,22 @@
 {
-  "name": "ngx-injector",
-  "version": "0.0.1",
+  "name": "@hangar42/ngx-injector",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://hangar42.de",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hangar42-de/ngx-injector"
+  },
+  "bugs": {
+    "url": "https://github.com/Hangar42-de/ngx-injector/issues",
+    "email": "bugs@hangar42.de"
+  },
+  "author": {
+    "name": "Dennis Rösner",
+    "email": "dennis@hangar42.de",
+    "url": "https://xn--rsner-jua.de/"
+  },
+  "license": "GPL-3.0",
   "peerDependencies": {
     "@angular/common": "^8.2.5",
     "@angular/core": "^8.2.5"

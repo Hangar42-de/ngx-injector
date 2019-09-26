@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ComponentInjectorService } from './injector.service';
+import { InjectorService } from './injector.service';
 
 
 
@@ -7,6 +7,6 @@ import { ComponentInjectorService } from './injector.service';
   declarations: [],
   imports: [],
   exports: [],
-  providers: [ComponentInjectorService]
+  providers: [InjectorService]
 })
 export class NgxInjectorModule { }
