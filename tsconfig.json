@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-injector": [
+        "dist/ngx-injector"
+      ],
+      "ngx-injector/*": [
+        "dist/ngx-injector/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

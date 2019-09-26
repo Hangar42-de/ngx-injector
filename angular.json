@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ngx-injector": {
+      "projectType": "library",
+      "root": "projects/ngx-injector",
+      "sourceRoot": "projects/ngx-injector/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-injector/tsconfig.lib.json",
+            "project": "projects/ngx-injector/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-injector/src/test.ts",
+            "tsConfig": "projects/ngx-injector/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-injector/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-injector/tsconfig.lib.json",
+              "projects/ngx-injector/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "injector-demo"
 }
